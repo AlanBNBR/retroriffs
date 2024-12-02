@@ -27,15 +27,16 @@ h1 {
     color: #ff00aa;
 }
 
+/*fade in dos elementos do site*/
 .fade-in {
     opacity: 0;
-    transform: scale(0.9); /* começa um pouco menor */
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* transição pra opacidade e escala */
+    transform: scale(0.9);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .fade-in.visible {
     opacity: 1;
-    transform: scale(1); /* volta pro tamanho original */
+    transform: scale(1);
 }
 
 body {
