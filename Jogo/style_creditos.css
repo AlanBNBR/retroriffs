@@ -1,0 +1,46 @@
+p {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #1bbafe;
+    letter-spacing: 0.15vw;
+    font-size: 2vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0.7rem 0; /* Ajuste menor entre linhas */
+}
+
+.funcao {
+    color: rgb(255, 0, 153);
+    font-size: 2.5vw;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    background-image: url('../imagens/ruido_fundo.png');
+    background-size: cover;
+}
+
+#inicio {
+    font-family: "Pixelify Sans", sans-serif;
+    padding: 0.8vh 1.3vw;
+    font-size: 1.8vw;
+    cursor: pointer;
+    background-color: rgb(255, 0, 153);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin-top: 3vh;
+}

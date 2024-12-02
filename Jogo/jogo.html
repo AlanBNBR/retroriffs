@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <title>Retro Riffs</title>
+    <link rel="icon" type="image/x-icon" href="../imagens/disco_master.png">
+    <link rel="stylesheet" type="text/css" href="style_jogo.css">
+
+</head>
+<body>
+    <!-- pagina do jogo -->
+        <div id="game">
+            <div id="start-text">-- Espaço para Começar --</div>
+            <div id="life-bar">
+                <div id="life"></div>
+            </div>
+            <h3 id="pontuacao">Pontuação: 0</h3>
+            <div id="targets">
+                <div class="target" class="notaR" data-key="A"></div>
+                <div class="target" class="notaA" data-key="S"></div>
+                <div class="target" class="notaR" data-key="D"></div>
+                <div class="target" class="notaA" data-key="F"></div>
+            </div>
+        </div>
+        <audio autoplay id="tub_musica" src="../musicas/Tubthumping.mp3"></audio>
+        <audio autoplay id="paranoid_musica" src="../musicas/Paranoid.mp3"></audio>
+        <audio autoplay id="master_musica" src="../musicas/Master of Puppets.mp3"></audio>
+
+        <audio id="erro" src="../sons/erro.mp3"></audio>
+        <audio id="acerto" src="../sons/acerto.mp3"></audio>
+        <audio id="perdeu" src="../sons/erro_grande.mp3"></audio>
+        <audio id="ganhou" src="../sons/ganhou.mp3"></audio>
+    
+    <script language="javascript" src="script_jogo.js"></script>
+</body>
+</html>

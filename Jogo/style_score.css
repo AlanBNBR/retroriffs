@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#mensagem{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #1bbafe;
+    letter-spacing: 0.13vw;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    background-image: url('../imagens/ruido_fundo.png');
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resultado-mensagem {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #1bbafe;
+    letter-spacing: 0.15vw;
+}
+
+.resultado-score {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #1bbafe;
+    letter-spacing: 0.15vw;
+}
+
+.resultado-botao {
+    font-family: "Pixelify Sans", sans-serif;
+    margin-top: 20px;
+    margin-right: 15px; /* Adiciona margem à direita */
+    margin-left: 15px;  /* Adiciona margem à esquerda */
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 153);
+    color: black;
+    border: none;
+}
+
+/* Para garantir ainda mais espaço entre os botões */
+button + button {
+    margin-left: 40px; /* Espaço adicional entre botões consecutivos */
+}
