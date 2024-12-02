@@ -19,10 +19,10 @@ body {
     font-style: normal;
     color: #e539dc;
     position: absolute;
-    top: 0%; /* Distância do topo */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Ajuste para centralizar */
-    text-align: center; /* Alinha o texto ao centro */
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
 
@@ -56,11 +56,12 @@ body {
     border-radius: 50%;
 }
 
+/* hitbox das notas */
 #targets {
     position: absolute;
-    bottom: -20px; /* Empurra as bolinhas verdes mais para baixo */
+    bottom: -20px;
     width: 100%;
-    height: 18.75%; /* Proporcional à largura do #game */
+    height: 18.75%;
     display: flex;
     justify-content: space-around;
 }
@@ -70,19 +71,19 @@ body {
     height: 100%;
     max-width: 60px;
     max-height: 60px;
-    background-color: transparent; /*esconde as bola verde que tem em cima das notas*/
+    background-color: transparent;
     border-radius: 50%;
 }
 
 #life-bar {
     width: 3.5%;
     height: 100%;
-    background: linear-gradient(to top, rgb(135, 10, 100), rgb(200, 150, 170)); /* Degradê rosa muito suave */
+    background: linear-gradient(to top, rgb(135, 10, 100), rgb(200, 150, 170));
     position: absolute;
     left: -30px;
     top: 0;
-    overflow: hidden; /* Impede que o #life vaze */
-    border: 2px solid rgb(228, 222, 222); /* Margem branca mais delicada */
+    overflow: hidden;
+    border: 2px solid rgb(228, 222, 222);
     box-shadow: 0 0 4px 2px rgba(192, 192, 192, 0.4),
                 0 0 8px 4px rgba(130, 128, 128, 0.2),
                 0 0 12px 6px rgba(0, 0, 0, 0.1);
@@ -91,7 +92,7 @@ body {
 #life {
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgb(0, 160, 180), rgb(160, 200, 220)); /* Degradê azul muito suave */
+    background: linear-gradient(to top, rgb(0, 160, 180), rgb(160, 200, 220));
     position: absolute;
     bottom: 0;
 }
@@ -114,10 +115,10 @@ body {
     position: absolute;
     width: 100%;
     animation: blink 1s infinite;
-    top: 50%; /* Alinha verticalmente ao centro */
-    left: 50%; /* Alinha horizontalmente ao centro */
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10; /* Garante que o texto fique sobre o jogo */
+    z-index: 10;
 }
 
 @keyframes blink {
