@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const params = new URLSearchParams(window.location.search);
     const pontuacao = params.get('pontuacao');
-    const nivel = parseInt(params.get('level'), 10) || 1; // Converte `level` para número ou usa 1 como padrão
+    const nivel = parseInt(params.get('level'), 10) || 1;
     const ganhou = params.get('ganhou');
 
     const next_again = document.getElementById('Next_again');
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const palmas = new Audio('../sons/palmas.mp3');
     const continuar = new Audio('../sons/continuar.mp3');
 
-    // Verifica se os elementos existem antes de tentar definir o textContent
+    // verifica se os elementos existem antes de tentar definir o textContent
     if (pontuacaoElem) {
         pontuacaoElem.textContent = `Sua pontuação: ${pontuacao}`;
     }
