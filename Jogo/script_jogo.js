@@ -73,7 +73,7 @@ function finalizarJogo() {
     });
     perdeu.play();
 
-    // Redireciona apenas após o áudio terminar
+    // redireciona só após o áudio terminar
     perdeu.addEventListener('ended', () => {
         window.location.href = `score.html?pontuacao=${score}&ganhou=false&level=${encodeURIComponent(level)}`;
     });
@@ -87,7 +87,7 @@ function gerarNotas() {
             return;
         }
 
-        // Determina se uma ou duas notas serão geradas
+        // determina se uma ou duas notas serão geradas
         const quantidadeNotas = Math.random() < 0.5 ? 1 : 2; // 50% de chance para 1 ou 2 notas
 
         for (let i = 0; i < quantidadeNotas; i++) {
@@ -97,14 +97,14 @@ function gerarNotas() {
             note.classList.add('note');
             note.dataset.key = randomKey;
 
-            // Define a cor da nota de acordo com a tecla
+            // define a cor da nota de acordo com a tecla
             if (randomKey === 'A' || randomKey === 'D') {
                 note.classList.add('notaR');
             } else if (randomKey === 'S' || randomKey === 'F') {
                 note.classList.add('notaA');
             }
 
-            // Posiciona a nota
+            // posiciona a nota
             note.style.left = (randomIndex * 25) + '%';
             gameArea.appendChild(note);
 
